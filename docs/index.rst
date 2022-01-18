@@ -1,0 +1,5 @@
+===============
+edi.plonecourse
+===============
+
+User documentation
