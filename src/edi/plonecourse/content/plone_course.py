@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# from plone.app.textfield import RichText
+from plone.app.textfield import RichText
 # from plone.autoform import directives
 from plone.dexterity.content import Container
 # from plone.namedfile import field as namedfile
@@ -16,6 +16,36 @@ from zope.interface import implementer
 class IPloneCourse(model.Schema):
     """ Marker interface and Dexterity Python Schema for PloneCourse
     """
+
+    text = RichText(
+            title = u"Kursinhalt",
+            required = False
+            )
+
+    goals = RichText(
+            title = u"Lernziele",
+            required = False
+            )
+
+    start = schema.Datetime(
+            title = u"Kursbeginn",
+            required = False
+            )
+
+    end = schema.Datetime(
+            title = u"Kursende",
+            required = False
+            )
+
+    effort = schema.Int(
+            title = u"Stunden pro Woche",
+            required = False
+            )
+
+    weeks = schema.Int(
+            title = u"Aufwand",
+            required = False
+            )
     # If you want, you can load a xml model created TTW here
     # and customize it in Python:
 

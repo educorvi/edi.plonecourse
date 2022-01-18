@@ -16,6 +16,14 @@ from zope.interface import implementer
 class IPloneCourseQuestion(model.Schema):
     """ Marker interface and Dexterity Python Schema for PloneCourseQuestion
     """
+
+
+    optionen = schema.List(
+        title=_(u'Antwortoptionen'),
+        required=False
+    )
+
+
     # If you want, you can load a xml model created TTW here
     # and customize it in Python:
 
