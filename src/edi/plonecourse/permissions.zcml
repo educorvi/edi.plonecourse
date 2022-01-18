@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="edi.plonecourse.AddPloneCourseUnit"
+        title="edi.plonecourse: Add PloneCourseUnit"
+    />
+
+
+    <permission
         id="edi.plonecourse.AddPloneCourse"
         title="edi.plonecourse: Add PloneCourse"
     />
