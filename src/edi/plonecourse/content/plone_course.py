@@ -6,7 +6,7 @@ from plone.dexterity.content import Container
 from plone.supermodel import model
 # from plone.supermodel.directives import fieldset
 # from z3c.form.browser.radio import RadioFieldWidget
-# from zope import schema
+from zope import schema
 from zope.interface import implementer
 
 
@@ -91,3 +91,11 @@ class IPloneCourse(model.Schema):
 class PloneCourse(Container):
     """
     """
+
+    def do_enroll(self):
+        host = self.host
+        dbname = self.database
+        username = self.username
+        password = self.password
+
+        return True
